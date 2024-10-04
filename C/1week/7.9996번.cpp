@@ -1,5 +1,5 @@
 /*
-파일 이름 형식 체크
+문제 : https://www.acmicpc.net/problem/9996
 
 ex)
 3   -> 파일 명 갯수
@@ -33,10 +33,11 @@ int main(){
         cin >> s;
         //cout << "파일명 : " << s.substr(0, str.size()) << "\n"; //파일명 처음 부터 패턴 str까지
         //cout << "파일명2 : " << s.substr(s.size()-end.size()) << "\n"; // end 사이즈 부터 마지막 글자 까지
-        if(str.size() + end.size() > s.size()){
+
+        if(str.size() + end.size() > s.size()){ // ad*ad 일때 s = "ad"가 들어와도 true 여서 접두+접미 size 는 입력값보다 커야하는 로직 추가
             cout << "NE\n";
         }else{
-            if(s.substr(0, str.size()) == str && s.substr(s.size()-end.size()) == end){
+            if(s.substr(0, str.size()) == str && s.substr(s.size()-end.size()) == end){ //이 if문만 쓰면 런타임 오류가 남 왜지?
             cout << "DA\n" ;
             }else{
                 cout << "NE\n" ;

@@ -27,7 +27,7 @@ int main() {
             //문자
             result += a - 10 + 'A';
         }
-        n /= m;
+        n /= m;// n을 m으로 나누고 결과를 n에 저장
     }
     reverse(result.begin(), result.end()); 
     //n을 진법 b로 변환할 때 가장 낮은 자리수(1의 자리)부터 계산해야 하여 reverse 사용

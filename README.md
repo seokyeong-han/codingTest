@@ -1,2 +1,2 @@
-# codingTest
-코딩테스트 정리용 repo
+# Algorithm
+Algorithm 공부/정리용 repo
